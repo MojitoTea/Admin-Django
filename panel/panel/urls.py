@@ -29,7 +29,7 @@ urlpatterns += [
 # Добавьте URL соотношения, чтобы перенаправить запросы с корневого URL, на URL приложения
 from django.views.generic import RedirectView
 urlpatterns += [
-    path('', RedirectView.as_view(url='/catalog/', permanent=True)),
+    path('', RedirectView.as_view(url='/admin/', permanent=True)),
 ]
 
 # Используйте static() чтобы добавить соотношения для статических файлов
